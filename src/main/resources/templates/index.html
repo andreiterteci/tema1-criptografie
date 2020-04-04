@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tema 1</title>
+</head>
+<body>
+<h1>
+    Tema laborator 1 criptografie si securitate</h1>
+<h2>Terteci Andrei Cornel</h2>
+<h2>Grupa 454</h2>
+
+<h1 th:text="${OPTerror}" style="color: red"></h1>
+<h1 th:text="${CaesarError}" style="color: red"></h1>
+
+<div th:if="${OPTerror == null && CaesarError == null}">
+<h3 style="margin-top: 50px;">Textul criptat dupa primul ciclu de criptare(Caesar): </h3>
+<h1 th:text="${encryptedWithCaesar}" style="color: blue"></h1>
+<h3 style="margin-top: 50px;">Textul criptat dupa al doilea ciclu de criptare(One Time Pad):</h3>
+<h1 th:text="${encryptedWithOTP}" style="color: orange"></h1>
+<h3 style="margin-top: 50px;">Textul dupa prima decriptare(One Time Pad):</h3>
+<h1 th:text="${decryptedWithOTP}" style="color: blue"></h1>
+<h3 style="margin-top: 50px;">Textul dupa a doua decriptare(Caesar):</h3>
+<h1 th:text="${decryptedWithCaesar}" style="color: green"></h1>
+</div>
+<button onclick="window.location.reload();">Encrypt</button>
+</body>
+</html>

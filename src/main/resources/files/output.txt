@@ -1,0 +1,4 @@
+Mesaj criptat cu Caesar: jnj qmbdf dsjquuhsbgjb
+Mesaj criptat cu OTP: DxtKUwQDFkQHRgUADRASFEgVAwwZBA==
+Mesaj decriptat cu OTP: jnj qmbdf dsjquuhsbgjb
+Mesaj decriptat cu Caesar: imi place cripttgrafia
